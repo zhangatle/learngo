@@ -43,5 +43,5 @@ func main() {
 	fmt.Println(
 		convertToBin(13),
 		convertToBin(0),
-		)
+	)
 }

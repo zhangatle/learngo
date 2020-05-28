@@ -4,10 +4,10 @@ import "fmt"
 
 // map元素是无序的
 func main() {
-	m := map[string]string {
-		"name": "zhangsan",
-		"course": "pe",
-		"site": "imooc",
+	m := map[string]string{
+		"name":    "zhangsan",
+		"course":  "pe",
+		"site":    "imooc",
 		"quality": "notbad",
 	}
 

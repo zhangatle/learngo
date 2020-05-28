@@ -5,8 +5,6 @@ import (
 	"unicode/utf8"
 )
 
-
-
 func main() {
 	s := "Yes今天要放假过年了！"
 	fmt.Println(len(s))

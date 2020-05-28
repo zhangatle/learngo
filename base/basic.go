@@ -27,7 +27,7 @@ func variableInitalValue() {
 }
 
 // 自动识别类型
-func variableTypeDeduction()  {
+func variableTypeDeduction() {
 	var name = "zhangatle"
 	var age = 26
 	fmt.Println(name, age)
@@ -41,15 +41,15 @@ func variableShorter() {
 
 // 欧拉
 func euler() {
-	fmt.Printf("%.3f\n", cmplx.Exp(1i * math.Pi) + 1)
-	fmt.Println(cmplx.Pow(math.E, 1i * math.Pi) + 1)
+	fmt.Printf("%.3f\n", cmplx.Exp(1i*math.Pi)+1)
+	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi) + 1)
 }
 
 // 开平方
 func triangle() {
 	var a, b int = 3, 4
 	var c int
-	c = int(math.Sqrt(float64(a * a + b * b)))
+	c = int(math.Sqrt(float64(a*a + b*b)))
 	fmt.Println(c)
 }
 
@@ -64,14 +64,14 @@ func consts() {
 // 枚举类型
 func enums() {
 	const (
-		cpp = 0
-		java = 1
+		cpp    = 0
+		java   = 1
 		python = 2
-		php = iota
+		php    = iota
 	)
 
-	const(
-		b = 1 << (10*iota)
+	const (
+		b = 1 << (10 * iota)
 		kb
 		mb
 		gb

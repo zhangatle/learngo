@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Room</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/fontawesome.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="text-center shadow bg-white rounded box">
+        <h1 class="box-title">Welcome to Chat Room</h1>
+        <div class="row box-form">
+            <form action="/chatRoom" class="form-inline">
+                <div class="input-group" style="margin:0 auto;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" name="name" placeholder="input your name">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Go</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p class="text-muted box-footer">@<a href="https://github.com/zhangatle">zhangatle</a></p>
+    </div>
+</body>
+</html>

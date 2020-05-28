@@ -17,10 +17,10 @@ func eval(a, b int, op string) (int, error) {
 	case "*":
 		return a * b, nil
 	case "/":
-		q, _ := div(9,4)
+		q, _ := div(9, 4)
 		return q, nil
 	default:
-		return 0, fmt.Errorf("unsupported operation: %s" , op)
+		return 0, fmt.Errorf("unsupported operation: %s", op)
 	}
 }
 
@@ -32,14 +32,14 @@ func pow(a, b int) int {
 	return int(math.Pow(float64(a), float64(b)))
 }
 
-func apply(op func(int, int) int, a, b int) int  {
+func apply(op func(int, int) int, a, b int) int {
 	p := reflect.ValueOf(op).Pointer()
 	opName := runtime.FuncForPC(p).Name()
-	fmt.Printf("Calling function %s with args " + "(%d, %d)", opName, a, b)
+	fmt.Printf("Calling function %s with args "+"(%d, %d)", opName, a, b)
 	return op(a, b)
 }
 
-func sum(numbers ...int) int  {
+func sum(numbers ...int) int {
 	s := 0
 	for i := range numbers {
 		s += numbers[i]
@@ -53,15 +53,15 @@ func swap(a, b int) (int, int) {
 
 func main() {
 	fmt.Println(eval(2, 4, "x"))
-	fmt.Println(div(5,4))
+	fmt.Println(div(5, 4))
 	fmt.Println(apply(pow, 3, 4))
 	fmt.Println(apply(
 		func(a int, b int) int {
 			return int(math.Pow(float64(a), float64(b)))
 		}, 3, 4,
-		))
-	fmt.Println(sum(2,3,4))
-	a, b := 3,4
-	a,b = swap(a, b)
-	fmt.Println(a,b)
+	))
+	fmt.Println(sum(2, 3, 4))
+	a, b := 3, 4
+	a, b = swap(a, b)
+	fmt.Println(a, b)
 }

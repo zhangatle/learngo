@@ -24,14 +24,14 @@ func grade(score int) string {
 }
 
 func main() {
-	 const filename = "abc.txt"
-	 if contents, err := ioutil.ReadFile(filename); err != nil {
-	 	fmt.Println(err)
-	 }else {
-		 fmt.Printf("%s\n", contents)
-	 }
-	 fmt.Println(
-	 	grade(0),
-	 	grade(-1),
-	 	)
+	const filename = "abc.txt"
+	if contents, err := ioutil.ReadFile(filename); err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Printf("%s\n", contents)
+	}
+	fmt.Println(
+		grade(0),
+		grade(-1),
+	)
 }
